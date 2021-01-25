@@ -1,5 +1,5 @@
 #include <iostream>
-#incldee <string>
+#include <string>
 
 class FizzBuzz{
     public:
