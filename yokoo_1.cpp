@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class FizzBuzz
 {
@@ -46,12 +47,12 @@ void FizzBuzz::Buzz()
 
 
 int main(){
-  int set;
+  int set_num;
   FizzBuzz fbzz;
 
-  std::cin >> set;
+  std::cin >> set_num;
 
-  fbzz.Set(set);
+  fbzz.Set(set_num);
   fbzz.Branch();
 
   return 0;
