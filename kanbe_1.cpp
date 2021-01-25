@@ -3,7 +3,7 @@
 class FizzBuzz{
     public:
         void set(int num);
-        std::string check();
+        void check();
     private:
         int c_num;
 };
@@ -12,18 +12,18 @@ void FizzBuzz::set(int num){
     c_num = num;
 }
 
-std::string FizzBuzz::check(){
+void FizzBuzz::check(){
     std::string f = "Fizz";
     std::string b = "Buzz";
-    std::string n = "error";
+    std::string e = "error";
     if(c_num % 15 == 0){
-        return f + b;
+        std::cout << f + b << std::endl;
     } else if(c_num % 3 == 0){
-        return f;
+        std::cout << f << std::endl;
     } else if(c_num % 5 == 0){
-        return b;
+        std::cout << b << std::endl;
     } else{
-        return n;
+        std::cout << e << std::endl;
     }
 } 
 
@@ -32,6 +32,6 @@ int main(){
     int num;
     std::cin >> num;
     obj.set(num);
-    std::cout << obj.check() << std::endl;
+    obj.check();
     return 0;
 }
