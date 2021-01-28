@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class fizzbuzz{
 public:
@@ -13,14 +14,15 @@ void fizzbuzz::set(int num){
 }
  
 void fizzbuzz::judge(){
-  if(m_num % 3 == 0 && m_num % 5 == 0)
+  if(m_num % 3 == 0 && m_num % 5 == 0){
     std::cout << "FizzBuzz" << std::endl;
-  else if(m_num % 3 == 0)
+  }else if(m_num % 3 == 0){
     std::cout << "Fizz" << std::endl;
-  else if(m_num % 5 == 0)
+  }else if(m_num % 5 == 0){
     std::cout << "Buzz" << std::endl;
-  else
+  }else{
     std::cout << "not" << std::endl;
+  }
 }
 
 int main(){
