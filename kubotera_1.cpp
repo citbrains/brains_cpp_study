@@ -23,7 +23,7 @@ void FizzBuzz::check(){
     if(c_num % 5 == 0)
         str += "Buzz";
 
-    if( str[0] =='\0')
+    if(str.empty())
         str += "Error";
 
     std::cout << str << std::endl;
