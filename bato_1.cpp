@@ -1,8 +1,6 @@
 #include<iostream>
 #include<string>
 
-using namespace std;
-
 class CSample{
   public:
     void set(int num);
@@ -40,7 +38,7 @@ std::string CSample::juging(){
 int main(){
   CSample obj;
   int a;
-  while(1){
+  while(a!=-555){
     std::cin >> a;
     obj.set(a);
     std::cout << "input:"<<obj.get()<< std::endl;
