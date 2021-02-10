@@ -11,12 +11,12 @@ class arrey{
 	
 	void append(int x);
 	void insert(int y);
-	int cat(int cat);
+	int cat(int cat);				//関数の命名の意図が分かりません。関数は行う動作が分かるような命名を心がけて下さい。
 	
 	
 	private:
 		int num[100];
-		int end_idex=0;
+		int end_idex=0;				//スペルミスがあるとデバッグの際や検索の際に非常に手間になる事があるので気を付けてください。
 		int sub[100];
 	
 	};
