@@ -8,8 +8,8 @@ class Csample{
     }
   }
   void push(int x); //enter
-  int get(int cat); //arrey's public
-  int eget(); //element's public
+  int get(int cat); //arrey's public             //一つのクラスに存在するgetメソッドが一つの場合を除き、単純にgetという名前の関数を作るのはやめましょう。
+  int eget(); //element's public                 //名前を付ける際に省略する事は基本的に推奨されません。eだけではそれが何を指すのか特定できません。   
   int pop(); //back
   
   private:
@@ -28,7 +28,7 @@ int Csample::get(int cat){
     return stack[cat];
 }
 /*element's public*/
-int Csample::eget(){
+int Csample::eget(){                            //ここで指すelementとは何のことですか？要素数を取得する関数であるとしたら適切な名前ではないと思います。
   return end_index;
 }
 
