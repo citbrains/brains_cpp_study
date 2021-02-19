@@ -9,10 +9,10 @@
 
 #include <iostream>
 
-class kadai{
+class task{
   public:
-    kadai(int n);
-    ~kadai();
+    task(int n);
+    ~task();
     int &access(int num);
     void all();
   private:
@@ -22,7 +22,7 @@ class kadai{
   
 };
 
-kadai::kadai(int n)
+task::task(int n)
 {
   ptr = new int[n];
   for(int i=0;i<n;i++){
@@ -31,12 +31,12 @@ kadai::kadai(int n)
   max = n;
 }
 
-kadai::~kadai()
+task::~task()
 {
   delete [] ptr;
 }
 
-int &kadai::access(int num)
+int &task::access(int num)
 {
   if(num > max){
     std::cout << "error" << std::endl;
@@ -47,7 +47,7 @@ int &kadai::access(int num)
   }
 }
 
-void kadai::all()
+void task::all()
 {
   for(int i=0;i<max;i++){
     std::cout << i << ":" << ptr[i] << " ";
@@ -56,8 +56,8 @@ void kadai::all()
 }
 int main(){
   int set_num=10;
-  kadai *kd;
-  kd = new kadai(set_num);
+  task *kd;
+  kd = new task(set_num);
   kd->all();
   int number = 4;
   int &hoge = kd->access(number);
@@ -67,8 +67,8 @@ int main(){
   std::cout << "配列の要素数入力:";
   std::cin >> set_num;
 
-  kadai *kd;
-  kd = new kadai(set_num);
+  task *kd;
+  kd = new task(set_num);
   kd->all();
 
   int number;
