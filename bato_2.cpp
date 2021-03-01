@@ -7,11 +7,13 @@ class Csample{
       stack[i]=-1;
     }
   }
+
   void input_elements(int push_index); //配列要素の追加の定義
   int application_array(int display_index); //配列の一般化の定義
   int get_index(); //要素数表示の定義
   int back_vale(); //値を戻すの定義
   void display();//表示の定義
+
   
   private:
     int stack[1000];
@@ -28,8 +30,10 @@ void Csample::input_elements(int push_index){
 int Csample::application_array(int display_index){
     return stack[display_index];
 }
+
 /*要素数の一般化*/
 int Csample::get_index(){
+
   return end_index;
 }
 
