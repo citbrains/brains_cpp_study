@@ -1,0 +1,14 @@
+{
+    "files.autoGuessEncoding": true,
+    "editor.codeActionsOnSave": null,
+
+    "terminal.integrated.shellArgs.windows": [
+        "-NoExit",
+        "-Command",
+        "chcp",
+        "65001"
+    ],
+    "files.associations": {
+        "vector": "cpp"
+    }
+}

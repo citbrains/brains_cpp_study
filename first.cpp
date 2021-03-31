@@ -5,7 +5,7 @@ class FizzBuzz
 public:
     void set(int num);
     int get();
-    void judge(int m_num);
+    void judge();
 
 private:
     int fizz = 3;
@@ -18,12 +18,7 @@ void FizzBuzz::set(int num)
     m_num = num;
 }
 
-int FizzBuzz::get()
-{
-    return m_num;
-}
-
-void FizzBuzz::judge(int m_num)
+void FizzBuzz::judge()
 {
     if(m_num % 3 == 0)
     {
@@ -42,6 +37,6 @@ int main()
     int num;
     std::cin >> num;
     hiroki.set(num);
-    hiroki.judge(hiroki.get());
+    hiroki.judge();
     return 0;
 }
